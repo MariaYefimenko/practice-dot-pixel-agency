@@ -1,5 +1,5 @@
 .container {
-    width: 1473px;
+    max-width: 1473px;
     padding: 0 15px;
     display: flex;
     background-color: #F2F8FD;
