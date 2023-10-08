@@ -14,29 +14,50 @@
 <body>
     <!-------------- HEADER ----------->
 <header class="header-section">
-    <div class="header-container container">
-        <div class="logo-icon">
-            <a href="#">
-            <svg class="icon icon-logo" width="72" height="64">
-                <use href="./images/defs.svg#icon-logo"></use>
-            </svg>    
-            </a>
-        </div>
-        <div class="nav-search">
-        <label for="search"></label>
-        <div class="nav-search-wrapper">
-            <input
-            type="text"
-            id="search"
-            name="q"
-            class="search-input"
-            placeholder="Search for places">
-            <svg class="search-input-icon" width="24" height="24" >
-            <use href="./images/defs.svg#icon-search-normal"></use>
-            </svg>
-        </div>
-        </div>
+    <section class="navigation-section">
+        <div class="header-container container">
+            <div class="logo-icon">
+                <a href="#">
+                <svg class="icon icon-logo" width="72" height="64">
+                    <use href="./images/defs.svg#icon-logo"></use>
+                </svg>
+                </a>
+            </div>
+            <div class="nav-search-wrapper">
+                <input
+                type="text"
+                id="search"
+                name="q"
+                class="search-input"
+                placeholder="Search for places">
+                <svg class="search-input-icon" width="24" height="24">
+                <use href="./images/defs.svg#icon-search-normal"></use>
+                </svg>
+            </div>
+            <div class="navigatio-settings-wrapper">
+                <button class="navigation-button" type="button">
+                    <svg class="navigation-button-icon" width="24" height="24">
+                        <use href="./images/defs.svg#icon-setting-4"></use>
+                    </svg>
+                </button>
+            </div>
+            <span class="vertical-line">
+                    <img src="./images/vertical-ruler.png" alt="vertical-line">
+            </span>
+    <div class="header-location-notification">
+        <svg class="location-logo" width="24" height="24">
+            <use href="./images/defs.svg#icon-location"></use>
+        </svg>
+        <p class="city-name">New York/ Dc</p>
+        <button class="notification-button" type="button">
+                    <svg class="notification-button-icon" width="22" height="22">
+                        <use href="./images/defs.svg#icon-notification-bing"></use>
+                    </svg>
+        </button>
     </div>
+    <img src="./images/Avatar.png" alt="profile-picture" width="53" height="53">
+    </div>
+    </section>
 </header>
 
 

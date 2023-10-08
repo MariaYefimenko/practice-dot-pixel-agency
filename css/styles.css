@@ -4,22 +4,42 @@
     display: flex;
     background-color: #F2F8FD;
     align-items: center;
-    align-content: center;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .logo-icon {
-    margin-right: 148px;
+    /* margin-right: 148px; */
 }
 
 .search-input {
-    display: block;
     box-sizing: border-box;
     width: 668px;
     height: 53px;
     padding: 14px 55px;
     background-color: #E9F1FA;
     border-radius: 26.5px;
+    outline: transparent;
     border-style: none;
+    /* margin-right: 62px; */
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.search-input:hover+.search-input-icon,
+.search-input:focus+.search-input-icon {
+    fill: #F9D44A;
+}
+
+/* .search-input:hover,
+.search-input:focus {
+    border-color: #F9D44A;
+} */
+/* DOESN`T WORK  */
+
+
+.nav-search {
+    display: flex;
+    align-items: center;
 }
 
 .search-input::placeholder {
@@ -31,6 +51,7 @@
 
 .nav-search-wrapper {
     display: flex;
+    align-items: center;
     position: relative;
 }
 
@@ -39,5 +60,79 @@
     left: 18px;
     top: 50%;
     transform: translateY(-50%);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.navigation-button {
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    border: none;
+    background-color: #18333E;
+    fill: #FFFFFF;
+    position: relative;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    /* margin-right: 74px; */
+}
+
+
+.navigation-button:hover,
+.navigation-button:active {
+    background-color: #F9D44A;
+    fill:#18333E;
+}
+
+.navigation-button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.vertical-line {
+    /* margin-right: 37px; */
+}
+
+.header-location-notification {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.location-logo {
+    background-color: transparent;
+    fill: #B4BCC4;
+}
+
+.city-name {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    font-size: 16px;
+    color: #18333E;
+    margin-right: 88px;
+}
+
+.notification-button {
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    padding: 14px;
+    background-color: transparent;
+    border: 1px solid #B4BCC4;
+    cursor: pointer;
+    fill: #18333E;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* margin-right: 35px; */
+}
+
+.notification-button-icon {
+    background-color: transparent;
+}
+
+.notification-button:focus,
+.notification-button:hover {
+    border-color: #18333E;
+    fill: #F9D44A;
 }
