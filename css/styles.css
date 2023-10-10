@@ -1,6 +1,6 @@
 body {
-    justify-content: center;
-    min-height: 100vh;
+    background-color: #F2F8FD;
+    min-height: 1137px;
 }
 
 * {
@@ -17,18 +17,21 @@ padding-left: 0;
 }
 
 .container {
-    max-width: 1600px;
+    width: 1600px;
     padding: 0 15px;
     margin: 0 auto;
+}
+
+.one-main-block {
+    display: flex;
+    
 }
 
 /* ------------- HEADER ----------- */
 
 .header-container {
     display: flex;
-    background-color: #F2F8FD;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 58px;
 }
 
@@ -211,4 +214,41 @@ padding-left: 0;
 
 .sidebar-section-item-icon {
     margin-right: 14px;
+}
+
+/* ---------------HERO----------------- */
+
+.hero-section-container-relative {
+    position: relative; 
+    width: 783px;
+    justify-content: center;
+}
+
+.hero-section-wrapper {
+    position: absolute;
+    
+}
+
+.hero-title {
+    font-family: Baloo 2, cursive; 
+    font-weight:  600; 
+    font-size: 30px;
+    color: #18333E;
+    margin-bottom: 18px;
+}
+
+.hero-recomended-list {
+    gap: 57px;
+}
+
+.hero-recomended-item {
+    display: inline-block;
+    list-style: none;
+    
+}
+
+.hero-recomended-link {
+    text-decoration: none;
+    font-family: 'Baloo 2', cursive;
+    color: #18333E;
 }
