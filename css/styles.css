@@ -222,6 +222,7 @@ padding-left: 0;
 .hero-section-wrapper {
     width: 783px;
     justify-content: center;
+    margin-bottom: 61px;
 }
 
 .hero-title {
@@ -275,11 +276,13 @@ padding-left: 0;
     margin-bottom: 7px;
 }
 
-.underpicture-location {
+.underpicture-location-text,
+.underpicture-location-points {
     font-family: 'Baloo 2', cursive;
     font-weight: 500;
     font-size: 16px;
     color: #18333E;
+    margin-right: 25px;
 }
 
 .heart-button {
@@ -299,3 +302,65 @@ padding-left: 0;
     background-color: #18333E;
     fill: #F9D44A;
 }
+
+.underpicture-location-wrapper {
+    display: flex;
+    align-items: center;
+    
+}
+
+.underpicture-location-icon {
+    margin-right: 10px;
+    fill: rgba(180, 188, 196, 1);
+}
+
+.underpicture-location-icon-star {
+    margin-right: 10px;
+    fill: rgba(255, 200, 94, 1);
+    
+    /* drop-shadow: rgba(254, 198, 92, 0.4),
+                rgba(254, 198, 92, 0.4); */
+}
+
+.bottom-section-wrapper {
+    min-width: 783px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chosen-tour-playlist {
+    background-color: #18333E;
+    display: flex;
+    padding: 23px;
+    border-radius: 25px;
+    width: 457px;
+    height: 119px;
+    margin-right: 30px;
+}
+
+.bottom-playlist-image,
+.bottom-playlist-image-1 {
+    border-radius: 20%;
+}
+
+.bottom-playlist-image-1 {
+    margin-right: 20px;
+}
+
+.chosen-tour-text {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 188px;
+    margin-right: 89px;
+    margin-bottom: 7px;
+}
+
+.chosen-tour-points {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
